@@ -7,7 +7,13 @@ This application was built on a Windows 10 64-bit system. I have not tried the a
 ## Usage
 You will first need to download [Node.JS](https://nodejs.org/en/download/) to ensure the application will work on a personal machine.
 
-Once Node.JS has been installed, the socketchat library is required for handling two way communication, such as authenticating and storing socket information, and can be downloaded on the command line using
+Once Node.JS has been installed, the socketchat package is required for handling two way communication, such as authenticating and storing socket information, and can be downloaded on the command line using
 ```
 npm install socketchat
 ```
+
+The package is included in the project by preceding the Javascript server file with
+```
+var socketchatlib = require('socketchat');
+```
+**Note:** the use of the socketchatlib variable was based on personal preference and can be changed to anything that better suits your project.
