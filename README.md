@@ -17,3 +17,13 @@ The package is included in the project by preceding the Javascript server file w
 var socketchatlib = require('socketchat');
 ```
 **Note:** the use of the socketchatlib variable was based on personal preference and can be changed to anything that better suits your project.
+
+Through the command line, navigate to the Server.js file directory and run it via Node prior to launching index.html
+```
+node Server.js
+```
+
+To communicate back and forth with another instance of the project, launch the index.html file twice. Login credentials are as listed below:
+*user1: pass1
+*user2: pass2
+*user3: pass3
