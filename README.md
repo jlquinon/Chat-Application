@@ -24,6 +24,6 @@ node Server.js
 ```
 
 To communicate back and forth with another instance of the project, launch the index.html file twice. Login credentials are as listed below:
-*user1: pass1
+* user1: pass1
 *user2: pass2
 *user3: pass3
