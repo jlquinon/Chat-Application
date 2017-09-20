@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>WebSocket Chat on Node.js</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body onload="init();">
+    <div class="login">
+      <form onsubmit="login(); return false;" id="login">
+        <input type="text" id="username" placeholder="username">
+        <input type="password" id="password" placeholder="password">
+        <button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
+      </form>
+      <form onsubmit="onSubmit(); return false;" id="message" style="display:none">
+        <input type="text" id="to" placeholder="To">
+        <textarea type="text" id="input" placeholder="message"></textarea>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Send</button><br>
+        <button onclick="onCloseClick(); return false;" class="btn btn-primary btn-block btn-large">close</button>
+      </form>
+      <div id="log" style="color:white;height:300px;overflow-y: auto;overflow-x:hidden;"></div>
+  </div>
+  <!-- Scripts-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!--Websockets-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web-socket-js/1.0.0/web_socket.min.js"></script>
+  <script src="js/script.js"></script>  
+  </body>
+  
+</html>
