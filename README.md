@@ -1,5 +1,5 @@
 # Chat-Application
-Two-way chat communication using WebSockets
+Two-way chat communication project using WebSockets to speak to another instance of the program.
 
 ## Foreword
 This application was built on a Windows 10 64-bit system. I have not tried the application on any other operating system. Please follow the guidelines to ensure proper functionality.
@@ -13,7 +13,7 @@ npm install socketchat
 ```
 
 The package is included in the project by preceding the Javascript server file with
-```
+```javascript
 var socketchatlib = require('socketchat');
 ```
 **Note:** the use of the socketchatlib variable was based on personal preference and can be changed to anything that better suits your project.
